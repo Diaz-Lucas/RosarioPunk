@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosario Punk - Contacto</title>
+    <meta name="description" content="Agrega tu banda a nuestra base de datos">
+    <meta name="keywords" content="punk, hardcore, rosario, musica, bandas">
+    <link rel="shortcut icon" href="./Img/rp.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+
+    <header class="sticky-top">
+    <!-- Inicio Logo -->
+    <a href="./index.html">
+        <div class="animate__animated animate__bounceIn" id="logo">
+            <img src="./Img/Logo.png" alt="Logo" class="img-fluid">
+        </div>
+    </a>
+    <!-- Fin Logo -->
+
+    <!-- Inicio Menú de Navegación -->
+    <ul class="nav justify-content-center">
+        <li class="nav-item border border-primary rounded-2 m-2">
+            <a class="nav-link" href="./Bandas.html">Bandas</a>
+        </li>
+        </li>
+        <li class="nav-item border border-primary rounded-2 m-2">
+            <a class="nav-link" href="./Agenda.html">Agenda</a>
+        </li>
+        <li class="nav-item border border-primary rounded-2 m-2">
+            <a class="nav-link" href="./Merch.html">Merch</a>
+        </li>
+        <li class="nav-item border border-primary rounded-2 m-2">
+            <a class="nav-link" href="./Descargas.html">Multimedia</a>
+        </li>
+        <li class="nav-item border rounded-2 m-2">
+            <a class="nav-link disabled">Contacto</a>
+        </li>
+    </ul>
+    <!-- Fin Menú de Navegación -->
+</header>
+
+    <!-- Inicio Título -->
+    <div class="container-fluid border align-items-center justify-content-center bg-dark">
+        <h1 class="text-center text-white align-items-center mt-1">
+            Sumá a tu banda
+        </h1>
+    </div>
+    <!-- Fin Título -->
+
+    <!-- Inicio Formulario -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-8 col-lg-6 col-xl-6 col-xxl-6">
+                <div>
+                    <form action="enviar.php" method="get" enctype="text/plain">
+                        <div>
+                            <label for="Banda" class="form-label text-white mt-4">Banda:</label>
+                            <br>
+                            <input type="text" id="Banda" placeholder="Nombre de la Banda" required
+                                class="form-control">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="Contactar" class="form-label text-white">Contacto:</label>
+                            <br>
+                            <input type="text" id="Contactar" placeholder="Nombre del contacto" required
+                                class="form-control">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="E-mail" class="form-label text-white">Email:</label>
+                            <br>
+                            <input type="email" id="E-mail" placeholder="E-mail de contacto" required
+                                class="form-control">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="Adjuntar" class="form-label text-white">Adjuntar Logo:</label>
+                            <br>
+                            <input type="file" id="Adjuntar" class="form-control">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="Estilo" class="form-label text-white">Estilo:</label>
+                            <br>
+                            <select name="Estilo" id="Estilo" class="selectpicker">
+                                <option value="01">Punk Rock</option>
+                                <option value="02">Pop Punk</option>
+                                <option value="03">Hardcore Punk</option>
+                                <option value="04">Ska Punk</option>
+                                <option value="05">Metalcore</option>
+                                <option value="06">Otro (especificar en comentarios)</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="Comentarios" class="form-label text-white"> Comentarios:</label>
+                            <br>
+                            <textarea name="Comentarios" id="comentar" cols="30" rows="10"
+                                placeholder="Ingresar comentarios opcionales" class="form-control"></textarea>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="submit" class="btn btn-dark border mb-5">
+                            <input type="reset" value="Limpiar formulario" class="btn btn-dark border mb-5">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Formulario -->
+
+  <!-- Inicio Pie -->
+  <footer>
+    <div class="pie">
+    <p>Nuestras redes sociales:</p>
+    <div class="logos">
+      <a href="https://www.facebook.com/" target="_blank"><img src="./Img/fb.png" alt="Logo FB" width="30"></a>
+      <a href="https://www.instagram.com/" target="_blank"><img src="./Img/ig.png" alt="Logo IG" width="30"></a>
+      <a href="https://www.spotify.com/" target="_blank"><img src="./Img/sp.png" alt="Logo SP" width="30"></a>
+    </div>
+  </div>
+    <p class="derechos">Creado por Lucas Diaz para CoderHouse. © 2022</p>
+  </footer>
+  <!-- Fin Pie -->
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

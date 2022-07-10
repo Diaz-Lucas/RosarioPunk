@@ -1,0 +1,228 @@
+@charset "UTF-8";
+/* Inicio estilo body */
+body {
+  background-color: #222136;
+}
+
+body header {
+  background-color: #222136;
+}
+
+/* Fin estilo body */
+/* Inicio estilo Títulos */
+#logo {
+  grid-area: logo;
+  width: 100%;
+  height: auto;
+}
+
+#logo img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+/* Fin estilo Títulos */
+/* Inicio estilo Subtítulo */
+h2 {
+  color: #fff;
+}
+
+/* Fin estilo Subtítulo */
+/* Inicio estilo de contenido embebido */
+.contenidoYouTube {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #222136;
+}
+
+/* Fin estilo de contenido embebido */
+/* Inicio estilos Footer */
+.pie {
+  /*     height: 150px;
+    max-height: 150px; */
+  font-size: medium;
+  text-align: center;
+  padding: 40px 0 40px;
+  background-color: #747267;
+}
+
+.pie p {
+  color: #fff;
+}
+
+.pie div.logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pie div.logos a {
+  padding: 0 15px 0 15px;
+}
+
+.pie p.suma {
+  padding-top: 0;
+  height: 50px;
+  max-height: 80px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.pie p.suma:hover {
+  font-size: x-large;
+}
+
+.pie a.sumaTuBanda {
+  padding-top: 200px;
+  text-decoration: none;
+  color: #fff;
+}
+
+p.derechos {
+  background-color: #222136;
+  color: #fff;
+  text-align: center;
+  padding-top: 10px;
+}
+
+/* Fin estilos Footer */
+/* Inicio estilos botones de bandas */
+.boton {
+  position: relative;
+}
+
+.boton:hover .info {
+  display: block;
+}
+
+.boton .info {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.6);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#50000000,endColorstr=#50000000);
+  width: 425px;
+  height: 150px;
+  color: #FFF;
+  padding: 10px;
+}
+
+/* Fin estilos botones de banda */
+/* Inicio estilo barra divisora */
+hr.divider {
+  height: 0.2rem;
+  max-width: 3.25rem;
+  margin: 1.5rem auto;
+  background-color: rgba(116, 114, 103, 0.8);
+  opacity: 1;
+}
+
+/* Fin estilo barra divisora */
+/* Inicio estilos Galería Imágenes */
+#portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl, #portfolio .container-xxl {
+  max-width: 1920px;
+}
+
+#portfolio .container-fluid .portfolio-box, #portfolio .container-sm .portfolio-box, #portfolio .container-md .portfolio-box, #portfolio .container-lg .portfolio-box, #portfolio .container-xl .portfolio-box, #portfolio .container-xxl .portfolio-box {
+  position: relative;
+  display: block;
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption, #portfolio .container-sm .portfolio-box .portfolio-box-caption, #portfolio .container-md .portfolio-box .portfolio-box-caption, #portfolio .container-lg .portfolio-box .portfolio-box-caption, #portfolio .container-xl .portfolio-box .portfolio-box-caption, #portfolio .container-xxl .portfolio-box .portfolio-box-caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  background: rgba(116, 114, 103, 0.8);
+  -webkit-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+  text-align: center;
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xxl .portfolio-box .portfolio-box-caption .project-category {
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xxl .portfolio-box .portfolio-box-caption .project-name {
+  font-size: 1.2rem;
+}
+
+#portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
+  opacity: 1;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+element.style {
+  max-height: 710px;
+}
+
+.slbImage {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  line-height: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5em 0;
+  margin: 0 auto;
+}
+
+img, svg {
+  vertical-align: middle;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.slbContentOuter {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0px auto;
+  padding: 0 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 2020;
+  text-align: left;
+  max-width: 100%;
+}
+
+.slbWrap {
+  position: absolute;
+  text-align: center;
+}
+
+/* Fin estilos Galería Imágenes */
+/*# sourceMappingURL=styles.css.map */
